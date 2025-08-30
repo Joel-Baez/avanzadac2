@@ -14,23 +14,23 @@ const nombrecompleto = `${nombre} ${apellido}`
 alert(nombrecompleto)
 
 let edad = 30;
-let salario =12.5
-let mayorEdad= true//false
+let salario = 12.5
+let mayorEdad = true//false
 let a = null
 let b = undefined;
 console.log(apellido)
-apellido =12;
+apellido = 12;
 apellido = true
-let numeros =[]
-numeros = new Array (10)
-numeros =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let otro=["add",12, 12.5, true, null, [1,2,3]]
-let persona ={
+let numeros = []
+numeros = new Array(10)
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let otro = ["add", 12, 12.5, true, null, [1, 2, 3]]
+let persona = {
     nombre: "joel",
     apellido: "Báez",
     edad: 20,
     mayorEdad: true,
-    jobs:[]
+    jobs: []
 
 }
 console.log(numeros[1])
@@ -38,22 +38,88 @@ console.log(persona.nombre, persona.apellido)
 
 console.log('ciclos-----------')
 console.log('for----------')
-for(let index=0; index<numeros.length;index++){
-    const mod = numeros[index] %2
-    if(mod==0){
+for (let index = 0; index < numeros.length; index++) {
+    const mod = numeros[index] % 2
+    if (mod == 0) {
         console.log(numeros[index], 'par')
-    } else{
+    } else {
         console.log(numeros[index], 'impar')
     }
 
 }
 console.log('for of----------')
-    for (let numero of numeros){
-        const mod = numero %2
-        if(mod==0){
-            console.log(numero, 'par')
-        } else{
-            console.log(numero, 'impar')    
-        }
-
+for (let numero of numeros) {
+    const mod = numero % 2
+    if (mod == 0) {
+        console.log(numero, 'par')
+    } else {
+        console.log(numero, 'impar')
     }
+
+}
+console.log("while-------------")
+
+let index = 0
+while (index < numeros.length) {
+    const mod = numeros[index] % 2
+    if (mod == 0) {
+        console.log(numeros[index], 'par')
+    } else {
+        console.log(numeros[index], 'impar')
+    }
+    index++
+}
+console.log("do while-------------")
+index = 0
+do {
+    const mod = numeros[index] % 2
+    if (mod == 0) {
+        console.log(numeros[index], 'par')
+    } else {
+        console.log(numeros[index], 'impar')
+    }
+    index++
+
+} while (index < numeros.length)
+
+console.log("foreach-------------")
+numeros.forEach((val, pos) => {
+    const mod = val % 2
+    if (mod == 0) {
+        console.log(val, 'par')
+    } else {
+        console.log(val, 'impar')
+    }
+
+
+})
+
+/**
+ * && and
+ * || or
+ * ! negacion
+ * 1= diferente
+ * >mayor
+ * >= mayor  o igual
+ * <menor
+ * <= menor o igual
+ * == igual valor
+ * ===igual valor y el tipo de dato
+*/
+
+console.log(1 == '1')
+console.log(1 === '1')
+
+const categoria = 'a'
+switch (categoria) {
+    case "a":
+        //codigo
+        break;
+    case "b":
+        //codigo
+        break;
+    default:
+        //codigo
+        break
+}
+
